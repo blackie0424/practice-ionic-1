@@ -22,3 +22,7 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('MainCtrl',function(){
+  console.log('Main Controller say Hello World');
+});
