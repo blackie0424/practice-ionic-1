@@ -23,6 +23,24 @@ angular.module('starter', ['ionic'])
   });
 })
 
+.config(function($stateProvider, $urlRouterProvider){
+    $stateProvider
+    .state('main',{
+        url:"/main",
+        templateUrl:"templates/main.html",
+        controller:"MainCtrl"
+    })
+
+    .state('page2',{
+        url:"/page2",
+        templateUrl:"templates/page2.html"
+    });
+
+
+
+    $urlRouterProvider.otherwise('/main');
+})
+
 .controller('MainCtrl',function(){
   console.log('Main Controller say Hello World');
 });
