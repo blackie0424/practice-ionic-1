@@ -4,5 +4,12 @@
     </ion-header-bar>
     <ion-content class="padding">
         <p>I am page2!</p>
+        <ion-list>
+	        <ion-item class="item-avator" ng-repeat="item in users">
+	        	<img ng-src="{{item.user.picture.thumbnail}}">
+	        	<h2>{{item.user.name.first}} {{item.user.name.last}}</h2>
+	        	<p>{{item.user.location.city}} {{item.user.password}}</p>
+	        </ion-item>
+    	</ion-list>
     </ion-content>
 </ion-pane>
