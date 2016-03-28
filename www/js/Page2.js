@@ -1,4 +1,4 @@
-angular.module('starter.Page2', ['ionic'])
+angular.module('starter.UserList', ['ionic'])
 
 .config(function($stateProvider){
     $stateProvider
